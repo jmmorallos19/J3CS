@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J3CS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">J3CS</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile" class="active">Home</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">J3CS</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li>
+            <a href="#profile" class="active" onclick="toggleMenu()">Home</a>
+          </li>
+          <li><a href="#team" onclick="toggleMenu()">Our Team</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" style="height: 92vh;">
+      <div class="section__pic-container" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500"
+      data-aos-easing="ease-in-sine">
+        <img
+          src="./assets/image.jpg"
+          alt="John Doe profile picture"
+          style="border-radius: 50%"
+          id="profile_pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1500">Hello, I'm</p>
+        <h1 class="title" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1500">John Mark</h1>
+        <p class="section__text__p2" id="typed-output" data-aos="fade-left" data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="1500"></p>
+
+        <div class="btn-container" data-aos="fade-up" data-aos-duration="1500">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container" data-aos="fade-up" data-aos-duration="1500">
+          <a href="https://www.facebook.com/jm.morallos.35" target="_blank">
+            <img src="./assets/fb.png" alt="My Facebook profile" class="icon" />
+          </a>
+          <a href="https://github.com/jmmorallos19" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper" id="team">
+      <h1 class="title">Our Team</h1>
+
+      <div class="card_Container">
+        <div class="card" data-aos="fade-right">
+          <div class="imbBx">
+            <img src="assets/tl.jpg" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="contentBx">
+              <h3>Cristian Megio <br /><span>Project Manager</span></h3>
+            </div>
+            <ul class="sci">
+              <li style="--i: 1">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li style="--i: 2">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li style="--i: 3">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in">
+          <div class="imbBx">
+            <img src="assets/dev.jpg" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="contentBx">
+              <h3>John Mark Morallos <br /><span>Fullstack Developer</span></h3>
+            </div>
+            <ul class="sci">
+              <li style="--i: 1">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li style="--i: 2">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li style="--i: 3">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in">
+          <div class="imbBx">
+            <img src="assets/ui.jpg" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="contentBx">
+              <h3>Joey Masinda <br /><span>UI Designer</span></h3>
+            </div>
+            <ul class="sci">
+              <li style="--i: 1">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li style="--i: 2">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li style="--i: 3">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+          <div class="imbBx">
+            <img src="assets/db.jpg" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="contentBx">
+              <h3>John Mark Mendones <br /><span>Database</span></h3>
+            </div>
+            <ul class="sci">
+              <li style="--i: 1">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li style="--i: 2">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li style="--i: 3">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-down">
+          <div class="imbBx">
+            <img src="assets/docs.jpg" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="contentBx">
+              <h3>Shyla Nicole Munoz<br /><span>Researcher</span></h3>
+            </div>
+            <ul class="sci">
+              <li style="--i: 1">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li style="--i: 2">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li style="--i: 3">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Us</h1>
+      <div class="section-container">
+        <div class="section__pic-container" data-aos="flip-left">
+          <img
+            src="assets/us.png"
+            alt="Profile picture"
+            class="about-pic"
+            width="400px"
+          />
+        </div>
+        <div class="about-details-container" data-aos="zoom-in-up">
+          <div class="text-container">
+            <p>
+              J3CS dev was created out of a college friendship forged during a
+              challenging capstone project. United by shared aspirations and a
+              passion for technology, we decided to take our collaboration
+              beyond the classroom. As friends and colleagues, we’ve worked
+              together seamlessly, coordinating efforts to bring innovative
+              solutions to life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container" data-aos="fade-right">
+            <div class="article-container">
+              <img src="assets/ss1.jpeg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="zoom-in">
+            <div class="article-container">
+              <img src="assets/ss2.jpeg" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Github</button
+              >
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-left">
+            <div class="article-container">
+              <img src="assets/ss3.jpeg" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="immaculadalibrarysystem@gmail.com"
+              >immaculadalibrarysystem@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/jm-morallos-b100b127a/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 J3CS. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
